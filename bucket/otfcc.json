@@ -11,7 +11,7 @@
     }
   },
   "bin": [
-    "otfccbuild.exe",
-    "otfccdump.exe"
+    "$dir/otfccbuild.exe",
+    "$dir/otfccdump.exe"
   ]
 }
