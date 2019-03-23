@@ -8,5 +8,8 @@
     ],
     "hash": "2f3ee9f70d88566625a821bb7d11cbee4fe3d08fd049303eb237d7984fbffb1f",
     "bin": "dnsforwarder.exe",
-    "pre_install": "Get-ChildItem \"$dir\\dnsforwarder-*.exe\" | Rename-Item -NewName \"$dir\\dnsforwarder.exe\""
+    "pre_install": [
+        "Get-ChildItem \"$dir\\dnsforwarder-*.exe\" | Rename-Item -NewName \"$dir\\dnsforwarder.exe\"",
+        "Get-ChildItem \"$dir\\default.config\" | Rename-Item -NewName \"$dir\\dnsforwarder.config\""
+    ]
 }
