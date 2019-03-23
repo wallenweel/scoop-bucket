@@ -11,6 +11,6 @@
     "persist": "dnsforwarder.config",
     "pre_install": [
         "Get-ChildItem \"$dir\\dnsforwarder-*.exe\" | Rename-Item -NewName \"$dir\\dnsforwarder.exe\"",
-        "Get-ChildItem \"$dir\\default.config\" | Copy-Item -NewName \"$dir\\dnsforwarder.config\""
+        "Get-ChildItem \"$dir\\default.config\" | Copy-Item -Destination \"$dir\\dnsforwarder.config\""
     ]
 }
