@@ -2,7 +2,7 @@
     "homepage": "https://dev.mysql.com/downloads/mysql/",
     "version": "5.7.19",
     "license": "GPL-2.0",
-    "url": "https://github.com/fatedier/frp/releases/download/v0.16.1/frp_0.16.1_windows_amd64.zip",
+    "url": "https://github.com/wallenweel/scoop-bucket/blob/master/archives/mysql-5.7.19.7z?raw=true",
     "hash": "896d3cce1cde735928873bef776a5ae71566435deb675be8e325cb7d50dd888e",
     "pre_install": [
         "if (!(Test-Path \"$dir/my.ini\")) {",
