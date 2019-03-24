@@ -1,12 +1,16 @@
 {
     "homepage": "https://github.com/fatedier/frp",
-    "version": "0.25.1",
+    "version": "0.16.1",
     "license": "Apache-2.0",
-    "url": "https://github.com/fatedier/frp/releases/download/v0.25.1/frp_0.25.1_windows_amd64.zip",
-    "hash": "0b8a952f0872d2dc3ecba6e2b1a668b35d5fd0b8bb6a28a3d38940785e9c7c88",
+    "url": "https://github.com/fatedier/frp/releases/download/v0.16.1/frp_0.16.1_windows_amd64.zip",
+    "hash": "552802d26007efe19e26e70284cc9aa9ec4b5d8f5508879c9f1d66614f4509cd",
     "bin": [
         "frpc.exe",
         "frps.exe"
+    ],
+    "pre_install": [
+        "Get-ChildItem \"$dir\\frp_*_amd64\\**.*\" | Move-Item -Destination \"$dir\"",
+        "Remove-Item -Recurse \"$dir\\frp_*_amd64\""
     ],
     "persist": [
         "frpc.ini",
